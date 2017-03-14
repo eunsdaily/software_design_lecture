@@ -33,7 +33,6 @@ public class ScoreReport {
 	}
 
 	public double getAverage() {
-		System.out.println(getSum() / scoreList.size());
 		return (double)(getSum() / scoreList.size());
 	}
 
