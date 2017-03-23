@@ -25,6 +25,8 @@ public class TransitionCoverageTest {
 		}
 		assertEquals(str.getMaxSize()-1, str.getSize());
 	}
+	//pop fail..? why?
+	//if StringStacks size is MAX, pop doesn't run.
 	
 	@Test
 	public void T4Test(){
@@ -42,7 +44,7 @@ public class TransitionCoverageTest {
 			str.push("T5");
 		}
 		str.pop();
-		assertEquals(str.getMaxSize(), str.getSize());
+		assertEquals(str.getMaxSize()-1, str.getSize());
 	}
 	
 	@Test
